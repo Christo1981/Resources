@@ -8,7 +8,7 @@
 					<testcase>
 						<xsl:attribute name="classname"><xsl:value-of select="name()"/></xsl:attribute>
 						<xsl:attribute name="name"><xsl:value-of select="@lb"/></xsl:attribute>
-						<xsl:attribute name="time"><xsl:value-of select="@lt div 1000"/></xsl:attribute>
+						<xsl:attribute name="time"><xsl:value-of select="@t div 1000"/></xsl:attribute>
 						<xsl:if test="assertionResult/failureMessage">
 							<failure><xsl:value-of select="assertionResult/failureMessage"/></failure>
 						</xsl:if>
